@@ -1,11 +1,15 @@
 <template>
   <div class="main-container">
-    <div class="pure-g">
-      <div class="pure-u-1 pure-u-md-1-2">
-        <BoxFrame class="main-box-frame">d</BoxFrame>
-      </div>
-      <div class="pure-u-1 pure-u-md-1-2">
-        <BoxFrame class="main-box-frame">d</BoxFrame>
+    <div class="main-centered">
+      <div class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-2">
+          <BoxFrame class="main-box-frame">
+            <ActionBar />
+          </BoxFrame>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-2">
+          <BoxFrame class="main-box-frame">d</BoxFrame>
+        </div>
       </div>
     </div>
   </div>
@@ -13,10 +17,12 @@
 
 <script>
 import BoxFrame from "@/components/ui/BoxFrame.vue";
+import ActionBar from "@/components/ActionBar.vue";
 export default {
   name: "App",
   components: {
-    BoxFrame
+    BoxFrame,
+    ActionBar
   }
 };
 </script>
@@ -28,11 +34,14 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
+  background-color: var(--light);
+  font-size: $body-font;
 }
 .main-container {
-  width: 100%;
-  height: 100%;
-  background-color: var(--light);
+  @include vertical-center;
+  margin: auto;
+  max-width: 900px;
+  text-align: center;
 }
 .main-box-frame {
   margin: 10px;

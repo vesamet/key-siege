@@ -14,10 +14,11 @@ export default {};
 <style lang="scss" scoped>
 .container {
   background-color: var(--secondary);
-  border-radius: $border-radius;
+  border-radius: 15px;
   position: relative;
   z-index: 0;
   min-height: 100px;
+  box-shadow: 0px 0px 10px var(--primary);
 }
 .bevel {
   position: absolute;
@@ -28,17 +29,15 @@ export default {};
 }
 .top {
   z-index: 3;
-  border-radius: $border-radius;
-  border-color: var(--primary);
-  border: 10px solid;
+  border-radius: 15px;
+  border: 10px solid var(--primary);
   top: -4px;
   left: -4px;
 }
 .side {
   z-index: 2;
-  border-radius: $border-radius;
-  border: 10px solid;
-  border-color: var(--primary-light);
+  border-radius: 15px;
+  border: 10px solid var(--primary-light);
 }
 .content {
   position: absolute;

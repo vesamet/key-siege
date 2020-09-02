@@ -1,5 +1,18 @@
+//Colors
+:root {
+  --primary: #14213d;
+  --primary-light: #93aadc;
+
+  --secondary: #e5e5e5;
+
+  --accent: #fca311;
+  --accent-light: #f8cb83;
+
+  --error: #c53838;
+
+  --dark: #000000;
+  --light: #ffffff;
+}
+
 //Text
 $body-font: 14px;
-
-// Containers
-$border-radius: 15px;
